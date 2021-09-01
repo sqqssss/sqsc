@@ -76,3 +76,5 @@ while wait() do
 		game:GetService("ReplicatedStorage").Aero.AreoRemoteServices.BeastModeService.Begin:FireServer(1)
 	end
 end
+
+--thx
