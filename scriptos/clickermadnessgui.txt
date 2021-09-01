@@ -67,6 +67,6 @@ stop.TextWrapped = true
 while wait() do
 	if getgenv().gamin == true then
 		game:GetService("ReplicatedStorage").Aero.AeroRemoteServices.ClickService.Click:FireServer(1000)
-		game:GetService("ReplicatedStorage").Aero.AreoRemoteServices.BeatModeService.Begin:FireServer(1)
+		game:GetService("ReplicatedStorage").Aero.AreoRemoteServices.BeastModeService.Begin:FireServer(1)
 	end
 end
