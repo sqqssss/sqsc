@@ -1,0 +1,65 @@
+--script by sqssss
+
+--dont steal script or i steal ur soul
+
+local ScreenGui = Instance.new("ScreenGui")
+local main = Instance.new("Frame")
+local label = Instance.new("TextLabel")
+local start = Instance.new("TextButton")
+local credits = Instance.new("TextLabel")
+local stop = Instance.new("TextLabel")
+
+--stufs
+
+ScreenGui.Parent = game.CoreGui
+
+main.Name = "main"
+main.Parent = ScreenGui
+main.BackgroundColor3 = Color3.fromRGB(49, 49, 49)
+main.Position = UDim2.new(0.673839211, 0, 0.633779287, 0)
+main.Size = UDim2.new(0, 276, 0, 114)
+main.Active = true
+main.Draggable = true
+
+label.Name = "label"
+label.Parent = main
+label.BackgroundColor3 = Color3.fromRGB(38, 38, 38)
+label.Size = UDim2.new(0, 276, 0, 26)
+label.Text = "very bad auto clicker"
+label.TextColor3 = Color3.fromRGB(255, 255, 255)
+label.TextSize = 14.000
+
+start.Name = "start"
+start.Parent = main
+start.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
+start.Position = UDim2.new(0.0362318754, 0, 0.378787875, 0)
+start.Size = UDim2.new(0, 124, 0, 42)
+start.Text = "Start Clicker"
+start.TextColor3 = Color3.fromRGB(255, 255, 255)
+start.TextSize = 14.000
+start.TextWrapped = true
+start.MouseButton1Down:connect(function()
+	getgenv().gamin = true;
+end)
+
+credits.Name = "credits"
+credits.Parent = main
+credits.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+credits.BackgroundTransparency = 1.000
+credits.Position = UDim2.new(0.137681156, 0, 0.799840569, 0)
+credits.Size = UDim2.new(0, 200, 0, 22)
+credits.Font = Enum.Font.Jura
+credits.Text = "Script by sqqssss"
+credits.TextColor3 = Color3.fromRGB(255, 255, 255)
+credits.TextSize = 14.000
+
+stop.Name = "stop"
+stop.Parent = main
+stop.BackgroundColor3 = Color3.fromRGB(31, 31, 31)
+stop.Position = UDim2.new(0.536231875, 0, 0.299840569, 0)
+stop.Size = UDim2.new(0, 118, 0, 57)
+stop.Text = "To stop the script, leave and rejoin. (My stop function wont work)"
+stop.TextColor3 = Color3.fromRGB(255, 255, 255)
+stop.TextScaled = true
+stop.TextSize = 14.000
+stop.TextWrapped = true
