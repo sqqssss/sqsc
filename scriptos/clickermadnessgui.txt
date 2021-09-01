@@ -1,7 +1,7 @@
--- Gui to Lua
--- Version: 3.2
+--script by sqqssss
+--u probably wont steal this but if you do i will steal ur robux
 
--- Instances:
+--stufs
 
 local ScreenGui = Instance.new("ScreenGui")
 local main = Instance.new("Frame")
@@ -10,9 +10,7 @@ local start = Instance.new("TextButton")
 local beast = Instance.new("TextButton")
 local credits = Instance.new("TextLabel")
 
---Properties:
-
-ScreenGui.Parent = game.Workspace
+ScreenGui.Parent = game.CoreGui
 
 main.Name = "main"
 main.Parent = ScreenGui
