@@ -63,3 +63,9 @@ stop.TextColor3 = Color3.fromRGB(255, 255, 255)
 stop.TextScaled = true
 stop.TextSize = 14.000
 stop.TextWrapped = true
+
+while wait() do
+	if getgenv().gamin == true then
+		game:GetService("ReplicatedStorage").Aero.AeroRemoteServices.ClickService.Click:FireServer(1000)
+	end
+end
