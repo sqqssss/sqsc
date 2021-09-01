@@ -37,7 +37,7 @@ start.Text = "Start Clicker"
 start.TextColor3 = Color3.fromRGB(255, 255, 255)
 start.TextSize = 14.000
 start.TextWrapped = true
-start.MouseButton1Down:connect(funtion()
+start.MouseButton1Down:connect(function()
 	getgenv().gamin = true;
 end)
 
@@ -50,7 +50,7 @@ beast.Text = "Beast Mode"
 beast.TextColor3 = Color3.fromRGB(255, 255, 255)
 beast.TextSize = 14.000
 beast.TextWrapped = true
-start.MouseButton1Down:connect(funtion()
+start.MouseButton1Down:connect(function()
 	getgenv().beast = true;
 end)
 
