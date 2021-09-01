@@ -1,17 +1,18 @@
---script by sqssss
+-- Gui to Lua
+-- Version: 3.2
 
---dont steal script or i steal ur soul
+-- Instances:
 
 local ScreenGui = Instance.new("ScreenGui")
 local main = Instance.new("Frame")
 local label = Instance.new("TextLabel")
 local start = Instance.new("TextButton")
+local beast = Instance.new("TextButton")
 local credits = Instance.new("TextLabel")
-local stop = Instance.new("TextLabel")
 
---stufs
+--Properties:
 
-ScreenGui.Parent = game.CoreGui
+ScreenGui.Parent = game.Workspace
 
 main.Name = "main"
 main.Parent = ScreenGui
@@ -25,21 +26,34 @@ label.Name = "label"
 label.Parent = main
 label.BackgroundColor3 = Color3.fromRGB(38, 38, 38)
 label.Size = UDim2.new(0, 276, 0, 26)
-label.Text = "very bad auto clicker"
+label.Text = "Clicker Madness GUI"
 label.TextColor3 = Color3.fromRGB(255, 255, 255)
 label.TextSize = 14.000
 
 start.Name = "start"
 start.Parent = main
 start.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
-start.Position = UDim2.new(0.0362318754, 0, 0.378787875, 0)
+start.Position = UDim2.new(0.0362318754, 0, 0.361244023, 0)
 start.Size = UDim2.new(0, 124, 0, 42)
 start.Text = "Start Clicker"
 start.TextColor3 = Color3.fromRGB(255, 255, 255)
 start.TextSize = 14.000
 start.TextWrapped = true
-start.MouseButton1Down:connect(function()
+start.MouseButton1Down:connect(funtion()
 	getgenv().gamin = true;
+end)
+
+beast.Name = "beast"
+beast.Parent = main
+beast.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
+beast.Position = UDim2.new(0.51449275, 0, 0.361244023, 0)
+beast.Size = UDim2.new(0, 124, 0, 42)
+beast.Text = "Beast Mode"
+beast.TextColor3 = Color3.fromRGB(255, 255, 255)
+beast.TextSize = 14.000
+beast.TextWrapped = true
+start.MouseButton1Down:connect(funtion()
+	getgenv().beast = true;
 end)
 
 credits.Name = "credits"
@@ -53,20 +67,14 @@ credits.Text = "Script by sqqssss"
 credits.TextColor3 = Color3.fromRGB(255, 255, 255)
 credits.TextSize = 14.000
 
-stop.Name = "stop"
-stop.Parent = main
-stop.BackgroundColor3 = Color3.fromRGB(31, 31, 31)
-stop.Position = UDim2.new(0.536231875, 0, 0.299840569, 0)
-stop.Size = UDim2.new(0, 118, 0, 57)
-stop.Text = "To stop the script, leave and rejoin. (My stop function wont work)"
-stop.TextColor3 = Color3.fromRGB(255, 255, 255)
-stop.TextScaled = true
-stop.TextSize = 14.000
-stop.TextWrapped = true
-
 while wait() do
 	if getgenv().gamin == true then
 		game:GetService("ReplicatedStorage").Aero.AeroRemoteServices.ClickService.Click:FireServer(1000)
+	end
+end
+
+while wait() do
+	if getgenv().beast == true then
 		game:GetService("ReplicatedStorage").Aero.AreoRemoteServices.BeastModeService.Begin:FireServer(1)
 	end
 end
